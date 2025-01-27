@@ -5,5 +5,5 @@ const secondsInMinute = 60;
 const secondsInHour = 3600;
 
 const hours = parseInt(currentSeconds / secondsInHour);
-const minutes = parseInt((currentSeconds - secondsInHour) / secondsInMinute);
+const minutes = parseInt((currentSeconds - (hours * secondsInHour)) / secondsInMinute);
 document.write(`<div>З початку доби пройшло ${hours} годин та ${minutes} хвилин</div>`);
