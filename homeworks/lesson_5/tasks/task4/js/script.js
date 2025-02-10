@@ -8,11 +8,6 @@ if (confirm('Почати тестування?')) {
   const columnsNumber = parseInt(prompt('Введіть кількість стовпців ігрового поля', 1));
 
   if (isFinite(rowsNumber) && isFinite(columnsNumber)) {
-    for (let row = 1; row <= rowsNumber; row++) {
-      for (let column = 1; column <= columnsNumber; column++) {
-      }
-    }
-
     const randomShipPositionX = 1 + (Math.floor(Math.random()*columnsNumber));
     const randomShipPositionY = 1 + (Math.floor(Math.random()*rowsNumber));
     const userMissilesNumber = parseInt(prompt('Введіть кількість снарядів', 1));
