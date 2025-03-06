@@ -16,9 +16,8 @@ if (confirm('Почати тестування?')) {
   document.write(`<hr>`);
 
   function getPercentMaxElem(prices) {
-    const percentMaxPrices = prices.map((el) => {
-      const maxPrice = Math.max(...securitiesPrices);
-      return `${(el * 100) / maxPrice}`;
+    const maxPrice = Math.max(...securitiesPrices);
+    const percentMaxPrices = prices.map((el) => (el * 100) / maxPrice;
     });
     return percentMaxPrices
   }
