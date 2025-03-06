@@ -15,11 +15,7 @@ if (confirm('Почати тестування?')) {
   document.write(`<hr>`);
 
   function getFunctionList(prices) {
-    document.write(`<ul>`);
-    const priceBiggerPrevPrice = prices.filter((el,index,arr) => {
-      if(index>0 && el>arr[index-1]) document.write(`<li>${el}</li>`)
-    })
-    document.write(`</ul>`);
+    const priceBiggerPrevPrice = prices.filter((el,index,arr) => index>0 && el>arr[index-1])
     return priceBiggerPrevPrice
   }
   document.write(getFunctionList(securitiesPrices))
