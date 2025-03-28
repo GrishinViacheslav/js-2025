@@ -475,19 +475,19 @@ if (confirm('Почати тестування?')) {
     },
   ];
   // 1) Загальну вартість (нові ціни - price)
-  const totalProductPrice = dataList.reduce((prevPrice, product) => prevPrice + product.price, 0)
+  const totalProductPrice = dataList.reduce((prevPrice, {price}) => prevPrice + price, 0)
   console.log(totalProductPrice);
 
   // 2)Знайти кількість товарів, у яких ціна зменшилась (price < old_price).
-  const productPriceChangeCount = dataList.reduce((count, product, index, productsList) =>  index > 0 && productsList[index].price !== productsList[index - 1].price ? count + 1 : count,0)
+  const productPriceChangeCount = dataList.reduce((count, {price, old_price}) =>  price < old_price ? count + 1 : count, 0)
   console.log(productPriceChangeCount);
 
   // 3) Товари, які доступні (sell_status:"available")
-  const availableProductsList = dataList.filter(product => product.sell_status === 'available')
+  const availableProductsList = dataList.filter(({sell_status}) => sell_status === 'available')
   console.log(availableProductsList);
 
   // 4) сформувати новий список об”єктів тільки доступних  для продажу товарів, 
   // які міститимуть тільки ідентифікатор товару (id), нову ціну (price), стару ціну (old_price), та ціну у доларах (usd_price)
-  const newProductList = dataList.filter(product=> product.sell_status && product.id && product.price && product.old_price && product.usd_price)
+  const newProductList = availableProductsList.map(({sell_status, id, price,old_price, usd_price}) => ({sell_status,id,price,old_price,usd_price}))
   console.log(newProductList);
 }
