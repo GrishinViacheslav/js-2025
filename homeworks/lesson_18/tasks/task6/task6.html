@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 18</title>
+	</head>
+	<body>
+		<header class="header">
+		</header>
+		<main class="page">
+			<div class="page__header">
+				<h1>Задача 6</h1>
+				<p>
+					Користувач задає кількість оцінок і натискає на кнопку «get table». В
+					результаті формується таблиця з input, куди користувач вводить оцінки.
+					Після цього натискає на кнопку “get sum” і знаходить середнє значення.
+				</p>
+			</div>
+			<div class="page__marks marks">
+				<div class="marks__block">
+					<label for="marksAmount" class="marks__label">Введіть кількість
+						оцінок</label>
+					<input id="marksAmount" type="number" class="marks__input">
+					<button id="marks-table" class="marks__button">get table</button>
+					<button id="avg-marks" class="marks__button">get average score</button>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>

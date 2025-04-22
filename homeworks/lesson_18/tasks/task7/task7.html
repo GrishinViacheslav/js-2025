@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 18</title>
+	</head>
+	<body>
+		<header class="header">
+		</header>
+		<main class="page">
+			<div class="page__header">
+				<h1>Задача 7</h1>
+				<p>
+					Подорож складається з 3 етапів. На кожному етапі користувач може вибрати
+					один з видів транспорту (авто, автобус, літак - випадаючий список),
+					харчування (сніданок, обід, вечеря – checkbоx) та одного з 3-х
+					гідів(використати - radio buttons). Ціни визначте самі. Підрахувати
+					загальну вартість.
+				</p>
+			</div>
+			<div class="page__trip trip">
+				<div class="trip__body">
+					<div class="trip__stage stage-trip">
+						<h2 class="stage-trip__title">1 ЕТАП</h2>
+						<fieldset class="stage-trip__transport transport">
+							<legend>Транспорт</legend>
+							<select class="transport__choice" name="transport">
+								<option value="1500">Автівка</option>
+								<option selected value="1000">Автобус</option>
+								<option value="5300">Літак</option>
+							</select>
+						</fieldset>
+						<fieldset class="stage-trip__food food">
+							<legend>Харчування</legend>
+							<fieldset class="food__breakfast breakfast">
+								<legend>Сніданок</legend>
+								<label class="breakfast__label">
+									<input class="breakfast__input" name="food-type" value="350"
+										type="checkbox">
+									<span class="breakfast__title">Український сніданок</span>
+								</label>
+								<label class="breakfast__label">
+									<input class="breakfast__input" name="food-type" value="200"
+										type="checkbox">
+									<span class="breakfast__title">Англійський сніданок</span>
+								</label>
+								<label class="breakfast__label">
+									<input class="breakfast__input" name="food-type" value="110"
+										type="checkbox">
+									<span class="breakfast__title">Американський сніданок</span>
+								</label>
+							</fieldset>
+							<fieldset class="food__lunch lunch">
+								<legend>Обід</legend>
+								<label class="lunch__label">
+									<input class="lunch__input" name="food-type" value="500"
+										type="checkbox">
+									<span class="lunch__title">Солянка + салат з капустою + сік</span>
+								</label>
+								<label class="lunch__label">
+									<input class="lunch__input" name="food-type" value="450"
+										type="checkbox">
+									<span class="lunch__title">Борщ + Салат з телятиною + Кола</span>
+								</label>
+								<label class="lunch__label">
+									<input class="lunch__input" name="food-type" value="700"
+										type="checkbox">
+									<span class="lunch__title">
+										Окрошка + Салат з фунчозою та куркою + чай</span>
+								</label>
+							</fieldset>
+							<fieldset class="food__lunch dinner">
+								<legend>Вечеря</legend>
+								<label class="dinner__label">
+									<input class="dinner__input" name="food-type" value="1000"
+										type="checkbox">
+									<span class="dinner__title">Стейк + Цезарь + Червоне вино</span>
+								</label>
+								<label class="dinner__label">
+									<input class="dinner__input" name="food-type" value="1000"
+										type="checkbox">
+									<span class="dinner__title">Шашлик + Овочевий салат + Віскі</span>
+								</label>
+								<label class="dinner__label">
+									<input class="dinner__input" name="food-type" value="1000"
+										type="checkbox">
+									<span class="dinner__title"> М'ясна дошка + Сирна дошка + Пиво</span>
+								</label>
+							</fieldset>
+						</fieldset>
+						<fieldset class="stage-trip__guides guides">
+							<legend class="guides__title">Наші гіди</legend>
+							<div class="guides__person">
+								<input checked id="guide-01-1" name="guide1" value="2500"
+									type="radio">
+								<label for="guide-01-1">Василь</label>
+							</div>
+							<div class="guides__person">
+								<input id="guide-02-1" name="guide1" value="3700" type="radio">
+								<label for="guide-02-1">Інна</label>
+							</div>
+							<div class="guides__person">
+								<input id="guide-03-1" name="guide1" value="2000" type="radio">
+								<label for="guide-03-1">Євген</label>
+							</div>
+						</fieldset>
+					</div>
+					<div class="trip__stage stage-trip">
+						<h2 class="stage-trip__title">2 ЕТАП</h2>
+						<fieldset class="stage-trip__transport transport">
+							<legend>Транспорт</legend>
+							<select class="transport__choice" name="transport">
+								<option selected value="1500">Автівка</option>
+								<option value="1000">Автобус</option>
+								<option value="5300">Літак</option>
+							</select>
+						</fieldset>
+						<fieldset class="stage-trip__food food">
+							<legend>Харчування</legend>
+							<fieldset class="food__breakfast breakfast">
+								<legend>Сніданок</legend>
+								<label class="breakfast__label">
+									<input class="breakfast__input" name="food-type" value="350"
+										type="checkbox">
+									<span class="breakfast__title">Український сніданок</span>
+								</label>
+								<label class="breakfast__label">
+									<input class="breakfast__input" name="food-type" value="200"
+										type="checkbox">
+									<span class="breakfast__title">Англійський сніданок</span>
+								</label>
+								<label class="breakfast__label">
+									<input class="breakfast__input" name="food-type" value="110"
+										type="checkbox">
+									<span class="breakfast__title">Американський сніданок</span>
+								</label>
+							</fieldset>
+							<fieldset class="food__lunch lunch">
+								<legend>Обід</legend>
+								<label class="lunch__label">
+									<input class="lunch__input" name="food-type" value="500"
+										type="checkbox">
+									<span class="lunch__title">Солянка + салат з капустою + сік</span>
+								</label>
+								<label class="lunch__label">
+									<input class="lunch__input" name="food-type" value="450"
+										type="checkbox">
+									<span class="lunch__title">Борщ + Салат з телятиною + Кола</span>
+								</label>
+								<label class="lunch__label">
+									<input class="lunch__input" name="food-type" value="700"
+										type="checkbox">
+									<span class="lunch__title">
+										Окрошка + Салат з фунчозою та куркою + чай</span>
+								</label>
+							</fieldset>
+							<fieldset class="food__lunch dinner">
+								<legend>Вечеря</legend>
+								<label class="dinner__label">
+									<input class="dinner__input" name="food-type" value="1000"
+										type="checkbox">
+									<span class="dinner__title">Стейк + Цезарь + Червоне вино</span>
+								</label>
+								<label class="dinner__label">
+									<input class="dinner__input" name="food-type" value="1000"
+										type="checkbox">
+									<span class="dinner__title">Шашлик + Овочевий салат + Віскі</span>
+								</label>
+								<label class="dinner__label">
+									<input class="dinner__input" name="food-type" value="1000"
+										type="checkbox">
+									<span class="dinner__title"> М'ясна дошка + Сирна дошка + Пиво</span>
+								</label>
+							</fieldset>
+						</fieldset>
+						<fieldset class="stage-trip__guides guides">
+							<legend class="guides__title">Наші гіди</legend>
+							<div class="guides__person">
+								<input id="guide-01-2" name="guide2" value="2500"
+									type="radio">
+								<label for="guide-01-2">Василь</label>
+							</div>
+							<div class="guides__person">
+								<input checked id="guide-02-2" name="guide2" value="3700" type="radio">
+								<label for="guide-02-2">Інна</label>
+							</div>
+							<div class="guides__person">
+								<input id="guide-03-2" name="guide2" value="2000" type="radio">
+								<label for="guide-03-2">Євген</label>
+							</div>
+						</fieldset>
+					</div>
+					<div class="trip__stage stage-trip">
+						<h2 class="stage-trip__title">3 ЕТАП</h2>
+						<fieldset class="stage-trip__transport transport">
+							<legend>Транспорт</legend>
+							<select class="transport__choice" name="transport">
+								<option value="1500">Автівка</option>
+								<option value="1000">Автобус</option>
+								<option selected value="5300">Літак</option>
+							</select>
+						</fieldset>
+						<fieldset class="stage-trip__food food">
+							<legend>Харчування</legend>
+							<fieldset class="food__breakfast breakfast">
+								<legend>Сніданок</legend>
+								<label class="breakfast__label">
+									<input class="breakfast__input" name="food-type" value="350"
+										type="checkbox">
+									<span class="breakfast__title">Український сніданок</span>
+								</label>
+								<label class="breakfast__label">
+									<input class="breakfast__input" name="food-type" value="200"
+										type="checkbox">
+									<span class="breakfast__title">Англійський сніданок</span>
+								</label>
+								<label class="breakfast__label">
+									<input class="breakfast__input" name="food-type" value="110"
+										type="checkbox">
+									<span class="breakfast__title">Американський сніданок</span>
+								</label>
+							</fieldset>
+							<fieldset class="food__lunch lunch">
+								<legend>Обід</legend>
+								<label class="lunch__label">
+									<input class="lunch__input" name="food-type" value="500"
+										type="checkbox">
+									<span class="lunch__title">Солянка + салат з капустою + сік</span>
+								</label>
+								<label class="lunch__label">
+									<input class="lunch__input" name="food-type" value="450"
+										type="checkbox">
+									<span class="lunch__title">Борщ + Салат з телятиною + Кола</span>
+								</label>
+								<label class="lunch__label">
+									<input class="lunch__input" name="food-type" value="700"
+										type="checkbox">
+									<span class="lunch__title">
+										Окрошка + Салат з фунчозою та куркою + чай</span>
+								</label>
+							</fieldset>
+							<fieldset class="food__lunch dinner">
+								<legend>Вечеря</legend>
+								<label class="dinner__label">
+									<input class="dinner__input" name="food-type" value="1000"
+										type="checkbox">
+									<span class="dinner__title">Стейк + Цезарь + Червоне вино</span>
+								</label>
+								<label class="dinner__label">
+									<input class="dinner__input" name="food-type" value="1000"
+										type="checkbox">
+									<span class="dinner__title">Шашлик + Овочевий салат + Віскі</span>
+								</label>
+								<label class="dinner__label">
+									<input class="dinner__input" name="food-type" value="1000"
+										type="checkbox">
+									<span class="dinner__title"> М'ясна дошка + Сирна дошка + Пиво</span>
+								</label>
+							</fieldset>
+						</fieldset>
+						<fieldset class="stage-trip__guides guides">
+							<legend class="guides__title">Наші гіди</legend>
+							<div class="guides__person">
+								<input id="guide-01-3" name="guide3" value="2500"
+									type="radio">
+								<label for="guide-01-3">Василь</label>
+							</div>
+							<div class="guides__person">
+								<input id="guide-02-3" name="guide3" value="3700" type="radio">
+								<label for="guide-02-3">Інна</label>
+							</div>
+							<div class="guides__person">
+								<input checked id="guide-03-3" name="guide3" value="2000" type="radio">
+								<label for="guide-03-3">Євген</label>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+				<div class="trip__cost cost">
+					<button id="calc-btn" class="cost__button">
+						Підрахувати загальну вартість
+					</button>
+					<div class="cost__text"></div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>

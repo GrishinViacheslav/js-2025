@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 18</title>
+	</head>
+	<body>
+		<header class="header">
+		</header>
+		<main class="page">
+			<div class="page__header">
+				<h1>Задача 2</h1>
+				<p>
+					Зробити конвертер валют (курси валют – константи у скрипті)
+				</p>
+			</div>
+			<div class="page__converter converter">
+				<form action="#" class="converter__form form-converter">
+					<div class="form-converter__block">
+						<label for="grn-amount" class="form-converter__label">Сума в
+							гривнях</label>
+						<input id="grn-amount" type="number" class="form-converter__input">
+					</div>
+					<button id="convert-btn"
+						class="form-converter__button">Конвертувати</button>
+					<div class="form-converter__block">
+						<label for="euro-amount" class="form-converter__label">Сума в євро</label>
+						<input id="euro-amount" type="number" class="form-converter__input">
+					</div>
+					<div class="form-converter__block">
+						<label for="usd-amount" class="form-converter__label">Сума в
+							доларах</label>
+						<input id="usd-amount" type="number" class="form-converter__input">
+					</div>
+
+				</form>
+			</div>
+		</main>
+		<footer class="footer">
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>
