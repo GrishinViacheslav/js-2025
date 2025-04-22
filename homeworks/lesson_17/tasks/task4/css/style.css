@@ -1,0 +1,8 @@
+table {
+  border: 2px solid grey;
+}
+table:not(:last-child) {
+  margin-bottom: 5px;
+}
+td {
+}
