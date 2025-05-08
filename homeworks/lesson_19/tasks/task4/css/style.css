@@ -1,0 +1,26 @@
+.task4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.block-container {
+  padding: 15px;
+  border: 2px solid green;
+}
+.table-header:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(0, 38, 255);
+}
+td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.table.active {
+  border: 2px solid red;
+}
