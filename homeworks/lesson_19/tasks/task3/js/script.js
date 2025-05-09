@@ -31,8 +31,7 @@ if (confirm("Почати тестування?")) {
       return list;
     }
 
-    coloredListBorder(e) {
-      const currentEl = e.target;
+    coloredListBorder() {
       const listArray = document.querySelectorAll(`.list`);
       if (listArray.length !== 0) {
         listArray.forEach((list) => {
