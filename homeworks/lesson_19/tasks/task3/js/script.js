@@ -65,12 +65,11 @@ if (confirm("Почати тестування?")) {
       const container = this.renderListContainer();
       const button = document.createElement(`button`);
       button.innerText = `Action`;
+      button.addEventListener(`click`, this.coloredListBorder.bind(this));
 
       if (selector) {
         document.querySelector(selector).append(container);
         document.querySelector(selector).append(button);
-
-        button.addEventListener(`click`, this.coloredListBorder.bind(this));
       } else {
         throw new Error(`Елемент з селектором ${selector} не знайдено`);
       }
