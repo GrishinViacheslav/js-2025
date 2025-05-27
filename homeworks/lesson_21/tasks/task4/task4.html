@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Кодування тексту -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Підключення окремого файлу стилів -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 18</title>
+	</head>
+	<body>
+		<header class="header">
+		</header>
+		<main class="page">
+			<div class="page__header">
+				<h1>Задача 4</h1>
+				<div class="task4">
+					<p class="task4-desc">
+						Користувач задає місяць навчання учня (перевіряти чи є числом, чи від 1 до
+						12, чи не канікули)
+						та оцінку (перевіряти чи є числом, чи від 1 до 100). Вивести чи зможе він
+						виправити оцінку
+						(якщо оцінка погана і це не останній місяць у семестрі) . Обробку усіх
+						помилок зробити з використанням відповідних класів.
+					</p>
+					<form action="#" class="form">
+						<div class="form__block">
+							<label for="month-num">Введіть номер місяця року</label>
+							<input id="month-num" type="number">
+						</div>
+						<div class="form__block">
+							<label for="score-num">Введіть вашу оцінку</label>
+							<input id="score-num" type="number">
+						</div>
+						<button id="button">Результат</button>
+					</form>
+				</div>
+			</div>
+			<div id="random-wish" class="page__wishes wishes">
+			</div>
+		</main>
+		<footer class="footer">
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>
