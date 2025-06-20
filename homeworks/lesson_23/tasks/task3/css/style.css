@@ -1,0 +1,21 @@
+/* task 4 */
+.task4-desc {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: flex-start;
+}
+
+.form__block {
+  display: flex;
+  column-gap: 10px;
+}
+
+#button {
+  padding: 5px 15px;
+  cursor: pointer;
+}
