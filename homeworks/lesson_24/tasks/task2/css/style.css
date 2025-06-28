@@ -1,0 +1,8 @@
+.form > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.form__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
